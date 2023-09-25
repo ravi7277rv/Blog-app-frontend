@@ -1,0 +1,366 @@
+@import './colors';
+
+.navbardiv{
+    max-width: 100%;
+    height:50px;
+    background: $fontColor-one;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    .navdiv1{
+        width:300px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px 15px 0px;
+
+
+        h3{
+            color: $outline-color2;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3:hover{
+            color: $secondary-color;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .homeIcon{
+            color: $outline-color2;
+        }
+        .homeIcon:hover{
+            color: $secondary-color;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+        
+    }
+
+    .navdiv2{
+        width: 400px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px 15px 0px;
+        position: relative;
+
+
+        input{
+            width: 100%;
+            padding: 8px 50px 8px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: $info-color;
+            color: $outline-color4;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .searchIcon{
+                font-size: 20px;
+                position: absolute;
+                right: 10px;
+                color: $outline-color3;
+                cursor: pointer;
+        }
+
+
+    }
+
+
+    .navdiv3{
+        width: 250px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px 0px 15px 0px;
+
+
+        .gourpIcon{
+            color: $outline-color2;
+        }
+
+        .messageIcon{
+            color: $outline-color2;
+        }
+
+        .notifyIcon{
+            color: $outline-color2;
+        }
+
+        .hover:hover{
+            color: $secondary-color;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+
+        .img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+
+
+            .profielImage{
+                width: inherit;
+                height: inherit;
+                border-radius: inherit;
+                border: 2px solid $secondary-color;
+
+            }
+
+
+            .profiledropdown{
+                width: 200px;
+                height: auto;
+                position: absolute;
+                top: 115%;
+                right: 4%;
+                background: $outline-color2;
+                box-shadow: 0px 0px 2px #888888;
+                transition: .5s ease-in-out;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 600;
+
+
+
+                .profieldrop1{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-bottom: .5px solid $secondary-color;
+
+                    .InprofileImage{
+                        margin: 10px 0px 10px 0px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                    .profilecontent{
+                        width: 50%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px 0px 0px 0px;
+
+                        .uname{
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            margin: 5px 0px 0px 0px;
+                            font-size: 18px;
+                            color: $info-color;
+                            font-weight: bold;
+                        }
+                        .urole{
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            color: $info-color;
+                        }
+
+                        
+                    }
+                    .profileactive{
+                        width: 15px;
+                        height: 15px;
+                        border: 3px solid $secondary-color;
+                        border-radius: 50%;
+                        background: $btn-success;
+                        margin: 30px 0px 0px 0px;
+                    }
+                }
+
+                .profiledrop2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-bottom: .5px solid $secondary-color;
+                   
+
+                    .profiledrop2div1{
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid $secondary-color;
+
+                        .profdiv{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 5px 10px;
+                            border-radius: 5px;
+
+                            .personIcon{
+                                margin: 5px 5px 5px 10px;
+                                color: $outline-color4;
+                            }
+
+                            span{
+                                font-size: 18px;
+                                margin: 5px 0px 5px 10px;
+                                color: $outline-color4;
+                            }
+                        }
+
+                        .profdiv:hover{
+                            background: $info-color;
+                            color: $secondary-color;
+
+                            .personIcon{
+                                color: $secondary-color;
+                            }
+
+                            span{
+                                color: $secondary-color;
+                            }
+                        }
+
+                        .profdiv2{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 5px 10px;
+                            border-radius: 5px;
+
+                            .settingIcon{
+                                margin: 5px 5px 5px 10px;
+                                color: $outline-color4;
+                            }
+
+                            span{
+                                font-size: 18px;
+                                margin: 5px 0px 5px 10px;
+                                color: $outline-color4;
+                            }
+                        }
+
+                        .profdiv2:hover{
+                            background: $info-color;
+                            color: $secondary-color;
+
+                            .settingIcon{
+                                color: $secondary-color;
+                            }
+
+                            span{
+                                color: $secondary-color;
+                            }
+                        }
+
+                        .profdiv3{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 5px 10px;
+                            border-radius: 5px;
+
+                            .suportIcon{
+                                margin: 5px 5px 5px 10px;
+                                color: $outline-color4;
+                            }
+
+                            span{
+                                font-size: 18px;
+                                margin: 5px 0px 5px 10px;
+                                color: $outline-color4;
+                            }
+                        }
+
+                        .profdiv3:hover{
+                            background: $info-color;
+                            color: $secondary-color;
+
+                            .suportIcon{
+                                color: $secondary-color;
+                            }
+
+                            span{
+                                color: $secondary-color;
+                            }
+                        }
+
+                        .profdiv4{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 5px 10px;
+                            border-radius: 5px;
+
+                            .helpIcon{
+                                margin: 5px 5px 5px 10px;
+                                color: $outline-color4;
+                            }
+
+                            span{
+                                font-size: 18px;
+                                margin: 5px 0px 5px 10px;
+                                color: $outline-color4;
+                            }
+                        }
+                        .profdiv4:hover{
+                            background: $info-color;
+                            color: $secondary-color;
+
+                            .helpIcon{
+                                color: $secondary-color;
+                            }
+
+                            span{
+                                color: $secondary-color;
+                            }
+                        }
+
+                    }
+
+                    .profiledropd2div2{
+                        width: 100%;
+
+                        .logoutdiv{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 5px 10px;
+                            border-radius: 5px;
+
+
+                            .logoutIcon{
+                                margin: 5px 5px 5px 10px;
+                                color: $outline-color4;
+                            }
+
+                            span{
+                                font-size: 18px;
+                                margin: 5px 0px 5px 10px;
+                                color: $outline-color4;
+                            }
+                        }
+                        .logoutdiv:hover{
+                            background: $info-color;
+                            color: $secondary-color;
+
+                            .logoutIcon{
+                                color: $secondary-color;
+                            }
+
+                            span{
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

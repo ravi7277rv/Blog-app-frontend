@@ -1,0 +1,326 @@
+@import './colors';
+
+.logindiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .textContent {
+        flex: 1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .img {
+            margin-top: 30px;
+        }
+
+        .text {
+            width: 600px;
+            height: 300px;
+
+            h3 {
+                font-size: 35px;
+                margin-top: 20px;
+                color: $fontColor-one;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .loginContent {
+        flex: 1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logincard {
+            width: 300px;
+            height: 300px;
+            background: $secondary-color;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #b6b6b6, -3px -3px 5px #b6b6b6;
+
+            .emaildiv {
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .mailIcon {
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+            }
+
+            .passdiv {
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .passIcon {
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                    cursor: pointer;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+            }
+
+            .buttondiv {
+                margin: 24px 10px 15px 10px;
+
+                button {
+                    width: 100%;
+                    background: $btn-success;
+                    border: none;
+                    border-radius: 2px;
+                    color: $secondary-color;
+                    font-size: 22px;
+                    padding: 5px;
+
+                }
+                button:hover {
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                    background:$btn-success2 ;
+                }
+            }
+
+            .forgotPassdiv{
+                display: flex;
+                justify-content: flex-end;
+                margin: 24px 10px 15px 10px;
+
+                h5{
+                    color: $info-color;
+                    cursor: pointer;
+                }
+            }
+            .goToLogin{
+                height: 30px;
+                display: flex;
+                justify-content: flex-start;
+                margin: 24px 10px 15px 10px;
+
+                h3{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                    span{
+                        color: $outline-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .registerContent {
+        flex: 1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .registercard {
+            width: 300px;
+            height: auto;
+            background: $secondary-color;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #b6b6b6, -3px -3px 5px #b6b6b6;
+
+            .namediv{
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .personIcon{
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+            }
+
+            .emaildiv{
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .mailIcon {
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+            }
+
+            .phonediv{
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .phoneIcon {
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+
+            }
+
+            .passdiv {
+                margin: 24px 10px 15px 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .passIcon {
+                    position: absolute;
+                    left: 2%;
+                    color: $outline-color;
+                    cursor: pointer;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: black;
+                    outline-color: $info-color ;
+                    padding: 0px 0px 0px 35px;
+
+                }
+            }
+
+            .imagediv{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .profileImage{
+                    margin: 4px;
+                    border-radius: 50%;
+                }
+
+                input{
+                    margin: 100px 0px 0px 10px;
+                    font-size: 10px;
+
+                }
+            }
+
+            .buttondiv {
+                margin: 24px 10px 15px 10px;
+
+                button {
+                    width: 100%;
+                    background: $btn-success;
+                    border: none;
+                    border-radius: 2px;
+                    color: $secondary-color;
+                    font-size: 22px;
+                    padding: 5px;
+
+                }
+                button:hover{
+                    cursor: pointer;
+                    background: $btn-success2;
+                    transition: .5s ease-in-out;
+                }
+            }
+
+            .forgotPassdiv{
+                display: flex;
+                justify-content: flex-end;
+                margin: 24px 10px 15px 10px;
+
+                h5{
+                    color: $info-color;
+                    cursor: pointer;
+                }
+            }
+            .goToLogin{
+                height: 30px;
+                display: flex;
+                justify-content: flex-start;
+                margin: 24px 10px 15px 10px;
+
+                h3{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                    span{
+                        color: $outline-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

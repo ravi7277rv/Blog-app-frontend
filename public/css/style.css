@@ -1,0 +1,773 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #e4e4e4;
+}
+
+.logindiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logindiv .textContent {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logindiv .textContent .img {
+  margin-top: 30px;
+}
+.logindiv .textContent .text {
+  width: 600px;
+  height: 300px;
+}
+.logindiv .textContent .text h3 {
+  font-size: 35px;
+  margin-top: 20px;
+  color: #0866ff;
+  font-weight: bold;
+}
+.logindiv .textContent .text p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.logindiv .loginContent {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logindiv .loginContent .logincard {
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #b6b6b6, -3px -3px 5px #b6b6b6;
+}
+.logindiv .loginContent .logincard .emaildiv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .loginContent .logincard .emaildiv .mailIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+}
+.logindiv .loginContent .logincard .emaildiv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .loginContent .logincard .passdiv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .loginContent .logincard .passdiv .passIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+  cursor: pointer;
+}
+.logindiv .loginContent .logincard .passdiv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .loginContent .logincard .buttondiv {
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .loginContent .logincard .buttondiv button {
+  width: 100%;
+  background: #42b72a;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 5px;
+}
+.logindiv .loginContent .logincard .buttondiv button:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  background: #309f1a;
+}
+.logindiv .loginContent .logincard .forgotPassdiv {
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .loginContent .logincard .forgotPassdiv h5 {
+  color: #579BB1;
+  cursor: pointer;
+}
+.logindiv .loginContent .logincard .goToLogin {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .loginContent .logincard .goToLogin h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.logindiv .loginContent .logincard .goToLogin h3 span {
+  color: #b6b6b6;
+  cursor: pointer;
+}
+.logindiv .registerContent {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logindiv .registerContent .registercard {
+  width: 300px;
+  height: auto;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #b6b6b6, -3px -3px 5px #b6b6b6;
+}
+.logindiv .registerContent .registercard .namediv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .registerContent .registercard .namediv .personIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+}
+.logindiv .registerContent .registercard .namediv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .registerContent .registercard .emaildiv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .registerContent .registercard .emaildiv .mailIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+}
+.logindiv .registerContent .registercard .emaildiv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .registerContent .registercard .phonediv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .registerContent .registercard .phonediv .phoneIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+}
+.logindiv .registerContent .registercard .phonediv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .registerContent .registercard .passdiv {
+  margin: 24px 10px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.logindiv .registerContent .registercard .passdiv .passIcon {
+  position: absolute;
+  left: 2%;
+  color: #b6b6b6;
+  cursor: pointer;
+}
+.logindiv .registerContent .registercard .passdiv input {
+  width: 100%;
+  height: 40px;
+  color: black;
+  outline-color: #579BB1;
+  padding: 0px 0px 0px 35px;
+}
+.logindiv .registerContent .registercard .imagediv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logindiv .registerContent .registercard .imagediv .profileImage {
+  margin: 4px;
+  border-radius: 50%;
+}
+.logindiv .registerContent .registercard .imagediv input {
+  margin: 100px 0px 0px 10px;
+  font-size: 10px;
+}
+.logindiv .registerContent .registercard .buttondiv {
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .registerContent .registercard .buttondiv button {
+  width: 100%;
+  background: #42b72a;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 5px;
+}
+.logindiv .registerContent .registercard .buttondiv button:hover {
+  cursor: pointer;
+  background: #309f1a;
+  transition: 0.5s ease-in-out;
+}
+.logindiv .registerContent .registercard .forgotPassdiv {
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .registerContent .registercard .forgotPassdiv h5 {
+  color: #579BB1;
+  cursor: pointer;
+}
+.logindiv .registerContent .registercard .goToLogin {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 24px 10px 15px 10px;
+}
+.logindiv .registerContent .registercard .goToLogin h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.logindiv .registerContent .registercard .goToLogin h3 span {
+  color: #b6b6b6;
+  cursor: pointer;
+}
+
+.navbardiv {
+  max-width: 100%;
+  height: 50px;
+  background: #0866ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbardiv .navdiv1 {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 10px 15px 0px;
+}
+.navbardiv .navdiv1 h3 {
+  color: #e7e7e7;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbardiv .navdiv1 h3:hover {
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.navbardiv .navdiv1 .homeIcon {
+  color: #e7e7e7;
+}
+.navbardiv .navdiv1 .homeIcon:hover {
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.navbardiv .navdiv2 {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 10px 15px 0px;
+  position: relative;
+}
+.navbardiv .navdiv2 input {
+  width: 100%;
+  padding: 8px 50px 8px 10px;
+  border: none;
+  border-radius: 10px;
+  outline: #579BB1;
+  color: #848484;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbardiv .navdiv2 .searchIcon {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  color: #bfbfbf;
+  cursor: pointer;
+}
+.navbardiv .navdiv3 {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+}
+.navbardiv .navdiv3 .gourpIcon {
+  color: #e7e7e7;
+}
+.navbardiv .navdiv3 .messageIcon {
+  color: #e7e7e7;
+}
+.navbardiv .navdiv3 .notifyIcon {
+  color: #e7e7e7;
+}
+.navbardiv .navdiv3 .hover:hover {
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.navbardiv .navdiv3 .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.navbardiv .navdiv3 .img .profielImage {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  border: 2px solid #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 115%;
+  right: 4%;
+  background: #e7e7e7;
+  box-shadow: 0px 0px 2px #888888;
+  transition: 0.5s ease-in-out;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5px solid #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 .InprofileImage {
+  margin: 10px 0px 10px 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 .profilecontent {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 0px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 .profilecontent .uname {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5px 0px 0px 0px;
+  font-size: 18px;
+  color: #579BB1;
+  font-weight: bold;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 .profilecontent .urole {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #579BB1;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profieldrop1 .profileactive {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: #42b72a;
+  margin: 30px 0px 0px 0px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5px solid #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv .personIcon {
+  margin: 5px 5px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv span {
+  font-size: 18px;
+  margin: 5px 0px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv:hover {
+  background: #579BB1;
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv:hover .personIcon {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv:hover span {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2 .settingIcon {
+  margin: 5px 5px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2 span {
+  font-size: 18px;
+  margin: 5px 0px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2:hover {
+  background: #579BB1;
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2:hover .settingIcon {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv2:hover span {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3 .suportIcon {
+  margin: 5px 5px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3 span {
+  font-size: 18px;
+  margin: 5px 0px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3:hover {
+  background: #579BB1;
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3:hover .suportIcon {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv3:hover span {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4 .helpIcon {
+  margin: 5px 5px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4 span {
+  font-size: 18px;
+  margin: 5px 0px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4:hover {
+  background: #579BB1;
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4:hover .helpIcon {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledrop2div1 .profdiv4:hover span {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 {
+  width: 100%;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv .logoutIcon {
+  margin: 5px 5px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv span {
+  font-size: 18px;
+  margin: 5px 0px 5px 10px;
+  color: #848484;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv:hover {
+  background: #579BB1;
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv:hover .logoutIcon {
+  color: #ffffff;
+}
+.navbardiv .navdiv3 .img .profiledropdown .profiledrop2 .profiledropd2div2 .logoutdiv:hover span {
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #0866ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: sticky;
+  top: 100%;
+}
+.footer .footerdiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #e7e7e7;
+}
+.footer .footerdiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e7e7;
+}
+.footer .footerdiv2 .div1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+.footer .footerdiv2 .div1:hover {
+  background: #e7e7e7;
+  color: #0866ff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.footer .footerdiv2 .div2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+.footer .footerdiv2 .div2:hover {
+  background: #e7e7e7;
+  color: #0866ff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.footer .footerdiv2 .div3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+.footer .footerdiv2 .div3:hover {
+  background: #e7e7e7;
+  color: #0866ff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.footer .footerdiv2 .div4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+.footer .footerdiv2 .div4:hover {
+  background: #e7e7e7;
+  color: #0866ff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container .row {
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: space-around;
+}
+.container .row .colOne {
+  width: 300px;
+  height: 100vh;
+  border: 2px solid purple;
+}
+.container .row .colTwo {
+  width: 600px;
+  height: auto;
+  border: 2px solid orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .row .colTwo .colTwo1 {
+  width: calc(100% - 40px);
+  height: 200px;
+  margin: 15px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px #848484;
+}
+.container .row .colTwo .colTwo1 .createpost {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 20px;
+}
+.container .row .colTwo .colTwo1 .createpost h4 {
+  color: #bfbfbf;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container .row .colTwo .colTwo1 .inputcaption {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 20px;
+}
+.container .row .colTwo .colTwo1 .inputcaption input {
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #bfbfbf;
+  outline-color: #579BB1;
+  padding: 0px 20px 0px 20px;
+}
+.container .row .colTwo .colTwo1 .inputcaption input::-moz-placeholder {
+  color: #ffffff;
+}
+.container .row .colTwo .colTwo1 .inputcaption input::placeholder {
+  color: #ffffff;
+}
+.container .row .colTwo .colTwo1 .imageupload {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.container .row .colTwo .colTwo1 .imageupload .profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.container .row .colTwo .colTwo1 .imageupload .imageIcon {
+  font-size: 20px;
+  margin-top: 40px;
+  color: #bfbfbf;
+}
+.container .row .colTwo .colTwo1 .imageupload button {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+  padding: 5px 10px;
+  background: #0866ff;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+}
+.container .row .colTwo .colTwo1 .imageupload button:hover {
+  cursor: pointer;
+  background: #279EFF;
+  transition: 0.5s ease-in-out;
+}
+.container .row .colTwo .colTwo2 {
+  width: calc(100% - 40px);
+  height: 600px;
+  border: 5px solid rgb(152, 14, 37);
+}
+.container .row .colThree {
+  width: 300px;
+  height: 100vh;
+  border: 2px solid turquoise;
+}/*# sourceMappingURL=style.css.map */
