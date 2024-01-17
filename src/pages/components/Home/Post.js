@@ -26,7 +26,7 @@ console.log(data)
             <div className="colTwouserdetail">
                 <div className="nameimage">
                 <Image src={userData ? (`${userData.avatar.url}`) : ("/images/img_avatar.png")} className='imgUser' alt='User image' width={30} height={30} />
-                <h4>Ravi Kumar</h4>
+                <h4>{userData.name}</h4>
                 </div>
                 <div className="optionedit" onClick={handlClickedOption}>
                     <MoreHorizIcon className='option' />
